@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family: sans-serif;
+        }
+        .banner{
+            width:100%;
+            height:100vh;
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFly92qNZh5_NQbpJ1d_KoX-gEAXa4mIooiIaL8uwRflwWrvC-PTIPwK1oEzYjt6f9_Jftf3s3eYmLFSKnjLEis8jATR-M_JqtO02JIP1riCd8gyqzNf2RZv3a7jK8wj8DbduFv7Cu_1gv/s1600/FILE1890.JPG);
+        }
+        .navbar{
+            width:85%;
+            margin: auto;
+            padding:35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width:120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            color:white;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+        .navbar ul li::after{
+            content: " ";
+            height:3px;
+            width:0px;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom:-10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width:100%;
+        }
+        .content{
+            width:100%;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color:white;
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top:80px;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        button{
+            width:200px;
+            padding:15px ; 
+            text-align: center;
+            margin-top:100px;
+            border-radius: 25px;
+            font-weight:bold;
+            border: 2px solid #009688;
+            background: transparent;
+            color:white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width:0%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        button:hover span{
+            width:100%;
+        }
+        button:hover{
+            border: none;
+        }
+    </style>
+</head>
+<body >
+    <div class="banner">
+        <div class="navbar">
+            <img src="https://majorcineplex.com.kh/assets/images/menu/logo-major-cm.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="server.html">service</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Welcome to Major Cambodia</h1>
+            <p>Do not forget Major cineplex. There are lots of movies you can enjoy with ur favorite person. the better,the quanitier and the best is Major cineplex.</p>
+            <div>
+                <button type="button"><span></span>BOOKING NOW!!</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

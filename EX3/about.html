@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family: sans-serif;
+        }
+        .header{
+            text-transform: uppercase;
+            text-align: center;
+            justify-content: center;
+            padding-top: 50px;
+            font-size: 25px;
+            color:red;
+            opacity: 0.8;
+        }
+        .main{
+            width:100%;
+            height:100vh;
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFly92qNZh5_NQbpJ1d_KoX-gEAXa4mIooiIaL8uwRflwWrvC-PTIPwK1oEzYjt6f9_Jftf3s3eYmLFSKnjLEis8jATR-M_JqtO02JIP1riCd8gyqzNf2RZv3a7jK8wj8DbduFv7Cu_1gv/s1600/FILE1890.JPG);
+        }
+        .description{
+            color:white;
+            text-align: center;
+            font-size: 20px;
+            width:70%;
+            position: absolute;
+            top:45%;
+            margin-left:200px;
+            
+        }
+        .navbar{
+            width:85%;
+            margin: auto;
+            padding:35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin:0px 20px;
+            position: relative;
+
+        }
+        .navbar ul li a{
+            color:white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        .navbar ul li::after{
+            content: " ";
+            height:3px;
+            width:0px;
+            position: absolute;
+            background: #009688;
+            left: 0;
+            bottom:-10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width:100%;
+        }
+        .logo{
+            width:120px;
+            cursor: pointer;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="https://majorcineplex.com.kh/assets/images/menu/logo-major-cm.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="server.html">service</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <h1>About us</h1>
+        </div>
+        <div class="description">
+            <p>Major Platinum Cineplex (MAJOR) is the leading Lifestyle Entertainment Company established in 2014 in Cambodia with core business of Cinema and Bowling. 
+
+                For past years of business growth, the company is moving toward to be “The World’s Best Cinema and Total Lifestyle Entertainment Complex Provider”. Moreover the company has also focused on the best technology and innovation to serve the better service to customers as in the scope of our slogan “Sharing the world’s best entertainment dreams”. 
+                
+                We have continuously developed high value-added products and services to satisfy the needs of our customers. At Major, we strongly focus on embracing digital technology to streamline business efficiency, improve our both employee and customer experiences, and provide the better social responsibility.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

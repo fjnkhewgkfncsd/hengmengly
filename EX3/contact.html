@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .banner{
+            width:100%;
+            height:100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFly92qNZh5_NQbpJ1d_KoX-gEAXa4mIooiIaL8uwRflwWrvC-PTIPwK1oEzYjt6f9_Jftf3s3eYmLFSKnjLEis8jATR-M_JqtO02JIP1riCd8gyqzNf2RZv3a7jK8wj8DbduFv7Cu_1gv/s1600/FILE1890.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+        .header{
+            width:85%;
+            margin:auto;
+            padding: 35px 0;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;   
+        }
+        .header ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0px 20px;
+            position: relative;
+        }
+        .header ul li a{
+            color:white;
+            text-decoration: none;
+            text-transform:uppercase ;
+        }
+        .header ul li::after {
+            content: " ";
+            width:0;
+            height:3px;
+            background-color: #009688;
+            position: absolute;
+            left:0;
+            bottom:-10px;
+            transition: 0.5s;
+        }
+        .header ul li:hover::after{
+            width:100%;
+        }
+        .logo{
+            width:120px;
+            cursor: pointer;
+        }
+        h3{
+            color:rgb(195, 178, 84);
+            font-size: 45px;
+            margin:40px 30px;
+
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            cursor: pointer;
+        }
+        a:hover{
+            color: #009688;
+        }
+        .part1 pre{
+            margin:20px 30px;
+            color:white;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .part2 pre{
+            margin:20px 30px;
+            color:white;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="header">
+            <img src="https://majorcineplex.com.kh/assets/images/menu/logo-major-cm.png" class="logo">
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="server.html">service</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <div class="part1">
+                    <h3>Business Development</h3>
+                    <pre>opening hours    :   working hours</pre>
+                    <pre>telephone             :   <a href="hd">012 222 222</a></pre>
+                    <pre>Email                        :   <a href="hf">salemajorcineplex.comkh</a></pre>
+                </div>
+                <div class="part2">
+                    <h3>Marketing </h3>
+                    <pre>opening hours    :   working hours</pre>
+                    <pre>telephone             :   <a href="sgs">010 285 983</a></pre>
+                    <pre>E-MAIL                       :   <a href="fhfg">DIGITAL@MAJORCINEPLEX.COM.KH</a></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
